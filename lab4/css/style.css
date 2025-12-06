@@ -1,0 +1,54 @@
+.hero-image {
+  background: url('Styles/tvoe_foto.jpg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin: 0; 
+}
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px 0;
+}
+.shortcuts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 0; 
+  margin: 0;
+  padding: 0;
+}
+.shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+
+.shortcut.light {
+  background-color: rgb(46, 49, 146);
+}
+
+
+.shortcut.dark {
+  background-color: rgb(30, 33, 120);
+}
+
+
+.shortcut:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .shortcuts {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,54 +1,43 @@
-.hero-image {
-  background: url('Styles/tvoe_foto.jpg') no-repeat center center;
-  background-size: cover;
-  height: 400px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  margin: 0; 
-}
-.hero-text {
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  padding: 20px 0;
-}
-.shortcuts {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 0; 
-  margin: 0;
-  padding: 0;
-}
-.shortcut {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.3s;
+.views-view-grid .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-
-.shortcut.light {
-  background-color: rgb(46, 49, 146);
+.views-col {
+    position: relative;
+    overflow: hidden;
 }
 
-
-.shortcut.dark {
-  background-color: rgb(30, 33, 120);
+.views-col img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-
-.shortcut:hover {
-  opacity: 0.9;
+.views-col h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
 }
 
-@media (max-width: 768px) {
-  .shortcuts {
-    grid-template-columns: 1fr;
-  }
+.views-col h2 span {
+    display: block;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 90, 0.8);
+}
+
+.shadow_featured {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.5));
+    pointer-events: none;
 }
